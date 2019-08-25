@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+$primary: #77087c;
+$primary-overlay: rgba(119, 8, 124, 0.8);
+
+body {
+    padding-top: 105px;
+    font-family: 'Montserrat', sans-serif;
+
+
+    .navbar {
+        box-shadow: 2px 2px 5px $primary;
+        //opacity: 0.9;
+        background: #fff;
+
+        .navbar-item {
+            font-size: 1.4rem;
+            padding-right: 1.4rem;
+        }
+    }
+
+    #showcase {
+        position: relative;
+        background-image: url('../img/bookcase-books-bookstore-1106468.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 400px;
+
+        .primary-overlay {
+            background: $primary-overlay;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .info-header {
+        width: 80%;
+        margin: auto;
+        border-bottom: 1px #ddd solid;
+    }
+
+    #authors {
+        img {
+            margin-top: -50px;
+        }
+
+        .card:hover {
+            background: $primary;
+            color: #fff;
+
+        }
+
+        .fab {
+            color: #fff;
+        }
+    }
+
+    #contact {
+        background: rgb(2, 0, 36);
+        background: linear-gradient(229deg, rgba(2, 0, 36, 1) 0%, rgba(9, 133, 60, 1) 100%, rgba(13, 138, 159, 1) 100%);
+        overflow: hidden;
+
+    }
+
+    // Media Queries
+
+    @media (max-width: 768px) {
+        .mb-resp {
+            margin-bottom: 1rem; //16px;
+        }
+    }
